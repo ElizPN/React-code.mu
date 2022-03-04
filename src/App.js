@@ -1,41 +1,17 @@
 import React from "react";
 
 function App() {
+  const str1 = "label";
+  const str2 = "block";
+  const str3 = "elem";
+
   return (
     <div>
-      <p className="ogogo">one</p>
-      <p className="tututut">two</p>
-      <p className="lolololo">three</p>
-      <input typeof="email"></input> <br />
-      <input typeof="radio"></input> <br />
-      <ul>
-        <li>kmm;mf</li>
-        <li>mkdm;dm;</li>
-        <li>nknn;s</li>
-        <li>kvenvfk</li>
-        <li>l;m;mdb</li>
-        <li>m;m;db</li>
-      </ul>
-      <table>
-        <tbody>
-          <tr>
-            <td>one</td>
-            <td>two</td>
-            <td>three</td>
-          </tr>
-
-          <tr>
-            <td>one</td>
-            <td>two</td>
-            <td>three</td>
-          </tr>
-        </tbody>
-        <tr>
-          <td>one</td>
-          <td>two</td>
-          <td>three</td>
-        </tr>
-      </table>
+      <label id={str1} htmlFor={str2} className={str3}>
+        text
+      </label>{" "}
+      <br />
+      <input id={str2} />
     </div>
   );
 }
