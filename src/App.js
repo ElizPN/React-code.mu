@@ -3,6 +3,10 @@ import { Main } from "./if_else";
 import { ShowAfterClick } from "./onClick";
 import { ShowHelloName } from "./ShowHelloName";
 import { OnClickCallBack } from "./onClickCallBack";
+import { FirstEvent } from "./first_event";
+import { SecondEvent } from "./second_event";
+import { ArrayRender } from "./array_render";
+import { ArrPush } from "./array_for";
 
 // function App() {
 //   const str1 = "label";
@@ -82,6 +86,10 @@ function App() {
       <ShowAfterClick />
       <ShowHelloName />
       <OnClickCallBack />
+      <FirstEvent />
+      <SecondEvent />
+      <ArrayRender />
+      <ArrPush />
     </div>
   );
 }
