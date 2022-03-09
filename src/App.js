@@ -5,8 +5,13 @@ import { ShowHelloName } from "./ShowHelloName";
 import { OnClickCallBack } from "./onClickCallBack";
 import { FirstEvent } from "./first_event";
 import { SecondEvent } from "./second_event";
-import { ArrayRender } from "./array_render";
+// import { ArrayRender } from "./array_render";
 import { ArrPush } from "./array_for";
+import { ArrayList } from "./array_map";
+import { Users } from "./array_of_objects";
+import { Table } from "./create_table";
+import "react-native-get-random-values";
+import { SomeFun } from "./function_id";
 
 // function App() {
 //   const str1 = "label";
@@ -88,8 +93,11 @@ function App() {
       <OnClickCallBack />
       <FirstEvent />
       <SecondEvent />
-      <ArrayRender />
       <ArrPush />
+      <ArrayList />
+      <Users />
+      <Table />
+      <SomeFun />
     </div>
   );
 }
