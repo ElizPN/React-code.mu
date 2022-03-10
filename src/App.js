@@ -12,6 +12,8 @@ import { Users } from "./array_of_objects";
 import { Table } from "./create_table";
 import "react-native-get-random-values";
 import { SomeFun } from "./function_id";
+import { State } from "./use_state";
+import { Product } from "./product";
 
 // function App() {
 //   const str1 = "label";
@@ -98,6 +100,8 @@ function App() {
       <Users />
       <Table />
       <SomeFun />
+      <State />
+      <Product />
     </div>
   );
 }
