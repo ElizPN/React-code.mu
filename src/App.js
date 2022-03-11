@@ -14,6 +14,9 @@ import "react-native-get-random-values";
 import { SomeFun } from "./function_id";
 import { State } from "./use_state";
 import { Product } from "./product";
+import { InCart } from "./tenar_operator";
+import { User } from "./user";
+import "./App.css";
 
 // function App() {
 //   const str1 = "label";
@@ -102,6 +105,8 @@ function App() {
       <SomeFun />
       <State />
       <Product />
+      <InCart />
+      <User />
     </div>
   );
 }
