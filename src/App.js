@@ -17,6 +17,7 @@ import { Product } from "./product";
 import { InCart } from "./ternar_operator";
 import { User } from "./user";
 import "./App.css";
+import { Input } from "./input_value";
 
 // function App() {
 //   const str1 = "label";
@@ -107,6 +108,7 @@ function App() {
       <Product />
       <InCart />
       <User />
+      <Input />
     </div>
   );
 }
