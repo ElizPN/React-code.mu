@@ -18,6 +18,8 @@ import { InCart } from "./ternar_operator";
 import { User } from "./user";
 import "./App.css";
 import { Input } from "./input_value";
+import { Input2 } from "./input2";
+import { CountSymbols } from "./count_symbols";
 
 // function App() {
 //   const str1 = "label";
@@ -109,6 +111,8 @@ function App() {
       <InCart />
       <User />
       <Input />
+      <Input2 />
+      <CountSymbols />
     </div>
   );
 }
