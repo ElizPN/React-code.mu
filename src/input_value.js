@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
 export function Input() {
-  const [value, setValue] = useState("");
+  let [value0, setValue] = useState("");
 
   return (
     <div>
       <input
-        value={value}
+        value={value0}
         onChange={(event) => {
           setValue(event.target.value);
           console.log(event.target.value);
         }}
       />{" "}
-      {console.log({ value })}
+      {console.log({ value0 })}
     </div>
   );
 }

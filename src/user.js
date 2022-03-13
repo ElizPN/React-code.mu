@@ -27,7 +27,7 @@ export function User() {
         Change surname
       </button>
       <button
-        className={!banState && "hidden"}
+        className={!banState ? "hidden" : undefined}
         onClick={() => {
           setStatus(false);
         }}
@@ -35,7 +35,7 @@ export function User() {
         To unbanned user's profile
       </button>
       <button
-        className={banState && "hidden"}
+        className={banState ? "hidden" : undefined}
         onClick={() => {
           setStatus(true);
         }}

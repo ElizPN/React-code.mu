@@ -13,7 +13,7 @@ export function State() {
   return (
     <div>
       <span>{name}</span>
-      <button onClick={clickHendler}></button>BTN
+      <button onClick={clickHendler}>BTN</button>
     </div>
   ); // let's render our state with name to some page
 }
