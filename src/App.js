@@ -20,6 +20,10 @@ import "./App.css";
 import { Input } from "./input_value";
 import { Input2 } from "./input2";
 import { CountSymbols } from "./count_symbols";
+import { YearOfBirth } from "./date_of_birth";
+import { CountTemperature } from "./fahren_to_celsius";
+import { Avarage } from "./avarage";
+import { Counter } from "./counter";
 
 // function App() {
 //   const str1 = "label";
@@ -113,6 +117,10 @@ function App() {
       <Input />
       <Input2 />
       <CountSymbols />
+      <YearOfBirth />
+      <CountTemperature />
+      <Avarage />
+      <Counter />
     </div>
   );
 }
