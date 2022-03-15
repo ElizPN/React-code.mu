@@ -24,6 +24,7 @@ import { YearOfBirth } from "./date_of_birth";
 import { CountTemperature } from "./fahren_to_celsius";
 import { Avarage } from "./avarage";
 import { Counter } from "./counter";
+import { CreateDate, Date } from "./date";
 
 // function App() {
 //   const str1 = "label";
@@ -121,6 +122,7 @@ function App() {
       <CountTemperature />
       <Avarage />
       <Counter />
+      <CreateDate />
     </div>
   );
 }
