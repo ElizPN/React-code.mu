@@ -25,6 +25,7 @@ import { CountTemperature } from "./fahren_to_celsius";
 import { Avarage } from "./avarage";
 import { Counter } from "./counter";
 import { CreateDate, Date } from "./date";
+import { CountSum, Translit } from "./translit";
 
 // function App() {
 //   const str1 = "label";
@@ -123,6 +124,8 @@ function App() {
       <Avarage />
       <Counter />
       <CreateDate />
+      <Translit />
+      <CountSum />
     </div>
   );
 }
