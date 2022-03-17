@@ -9,10 +9,8 @@ export function Input() {
         value={value0}
         onChange={(event) => {
           setValue(event.target.value);
-          console.log(event.target.value);
         }}
       />{" "}
-      {console.log({ value0 })}
     </div>
   );
 }
