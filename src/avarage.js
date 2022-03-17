@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function countAvarage(num1, num2, num3, num4, num5) {
   let result = (num1 + num2 + num3 + num4 + num5) / 5;
-  console.log(result);
+
   return result;
 }
 
