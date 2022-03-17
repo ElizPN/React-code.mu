@@ -9,16 +9,18 @@ function countDifference(num1, num2) {
   return diffDays;
 }
 
-function convertDate(date) {
-  return new Date(date);
-}
+// function convertDate(date) {
+//   return new Date(date);
+// }
 
 export function CreateDate() {
-  let [value1, setValue1] = useState(0);
-  let [value2, setValue2] = useState(0);
-  let [result, setResult] = useState(0);
-
   const current = new Date().toDateString();
+  console.log(typeof current);
+
+  let [value1, setValue1] = useState(current);
+  let [value2, setValue2] = useState(current);
+  let [result, setResult] = useState(0);
+  console.log(value1);
 
   return (
     <div>
