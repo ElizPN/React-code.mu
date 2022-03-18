@@ -99,12 +99,11 @@ export function Translit() {
   );
 }
 
-function countSum(num) {
-  let result;
-  if (num === "") {
+function countSum(string) {
+  let result = 0;
+  for (let i = 0; i < string.length; i++) {
+    result += Number(string[i]);
   }
-  result = result + Number(num);
-  console.log(result, num);
 
   return result;
 }
@@ -114,16 +113,14 @@ export function CountSum() {
 
   return (
     <div>
+      {" "}
       <textarea
         value={value}
         onChange={(event) => {
-          setValue(+event.target.value);
-          console.log(value);
+          setValue(event.target.value);
         }}
       />
-      <p>
-        {countSum(value)} {console.log(typeof value)}
-      </p>
+      <p>{countSum(value)}</p>
     </div>
   );
 }
