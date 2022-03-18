@@ -26,6 +26,7 @@ import { Avarage } from "./avarage";
 import { Counter } from "./counter";
 import { CreateDate, Date } from "./date";
 import { CountSum, Translit } from "./translit";
+import { CheckBox } from "./checkBox";
 
 // function App() {
 //   const str1 = "label";
@@ -126,6 +127,7 @@ function App() {
       <CreateDate />
       <Translit />
       <CountSum />
+      <CheckBox />
     </div>
   );
 }
