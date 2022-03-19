@@ -27,6 +27,8 @@ import { Counter } from "./counter";
 import { CreateDate, Date } from "./date";
 import { CountSum, Translit } from "./translit";
 import { CheckBox } from "./checkBox";
+import { Languages } from "./check_box_languages";
+import { Question } from "./question";
 
 // function App() {
 //   const str1 = "label";
@@ -128,6 +130,8 @@ function App() {
       <Translit />
       <CountSum />
       <CheckBox />
+      <Languages />
+      <Question />
     </div>
   );
 }
