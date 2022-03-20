@@ -29,6 +29,8 @@ import { CountSum, Translit } from "./translit";
 import { CheckBox } from "./checkBox";
 import { Languages } from "./check_box_languages";
 import { Question } from "./question";
+import { ActiveElemetn } from "./active_element";
+import { SelectCity } from "./select_city";
 
 // function App() {
 //   const str1 = "label";
@@ -132,6 +134,8 @@ function App() {
       <CheckBox />
       <Languages />
       <Question />
+      <ActiveElemetn />
+      <SelectCity />
     </div>
   );
 }
