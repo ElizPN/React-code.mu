@@ -31,6 +31,7 @@ import { Languages } from "./check_box_languages";
 import { Question } from "./question";
 import { ActiveElemetn } from "./active_element";
 import { SelectCity } from "./select_city";
+import { ArrayCities } from "./array_cities";
 
 // function App() {
 //   const str1 = "label";
@@ -136,6 +137,7 @@ function App() {
       <Question />
       <ActiveElemetn />
       <SelectCity />
+      <ArrayCities />
     </div>
   );
 }
