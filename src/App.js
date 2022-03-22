@@ -32,6 +32,9 @@ import { Question } from "./question";
 import { ActiveElemetn } from "./active_element";
 import { SelectCity } from "./select_city";
 import { ArrayCities } from "./array_cities";
+import { YourAge } from "./your_age";
+import { Radio } from "./radio";
+import { RadioChooseLanguage } from "./radio_choose_lang";
 
 // function App() {
 //   const str1 = "label";
@@ -138,6 +141,9 @@ function App() {
       <ActiveElemetn />
       <SelectCity />
       <ArrayCities />
+      <YourAge />
+      <Radio />
+      <RadioChooseLanguage />
     </div>
   );
 }
