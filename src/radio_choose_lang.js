@@ -3,10 +3,9 @@ import React, { useState } from "react";
 export function RadioChooseLanguage() {
   let [value, setValue] = useState("");
 
-  function compliment() {
-    if (value === "JavaScript") {
-      alert("Very cool");
-    }
+  let message;
+  if (value === "JavaScript") {
+    message = <p>"Very cool"</p>;
   }
 
   function changeHendler(event) {
@@ -47,7 +46,7 @@ export function RadioChooseLanguage() {
       <label htmlFor="java_script">JavaScript</label>
 
       <div>
-        {value} {compliment()}
+        {value} {message}
       </div>
     </div>
   );
