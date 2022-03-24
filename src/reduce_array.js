@@ -5,7 +5,18 @@ export function ReduceArray() {
 
   const copy = Object.assign([], array);
   let index = 0;
-  copy.splice(index, 2);
+  copy.splice(index, 1);
 
-  return <div>{copy}</div>;
+  return (
+    <div>
+      {array}
+      <button
+        onClick={() => {
+          setArray(copy);
+        }}
+      >
+        Delete element from array
+      </button>
+    </div>
+  );
 }
