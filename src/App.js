@@ -39,6 +39,7 @@ import { IncreaseArray } from "./increase_array";
 import { DefaultInput } from "./default_value_input";
 import { DefaultCkeckBox } from "./default_check_box";
 import { ReduceArray } from "./reduce_array";
+import { ChangeElement } from "./change_element_in_array";
 
 // function App() {
 //   const str1 = "label";
@@ -152,6 +153,7 @@ function App() {
       <DefaultInput />
       <DefaultCkeckBox />
       <ReduceArray />
+      <ChangeElement />
     </div>
   );
 }
