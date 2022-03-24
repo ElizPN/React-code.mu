@@ -35,7 +35,12 @@ import { ArrayCities } from "./array_cities";
 import { YourAge } from "./your_age";
 import { Radio } from "./radio";
 import { RadioChooseLanguage } from "./radio_choose_lang";
+<<<<<<< Updated upstream
 import { IncreaseArray } from "./increase_array";
+=======
+import { DefaultInput } from "./default_value_input";
+import { DefaultCkeckBox } from "./default_check_box";
+>>>>>>> Stashed changes
 
 // function App() {
 //   const str1 = "label";
@@ -145,7 +150,12 @@ function App() {
       <YourAge />
       <Radio />
       <RadioChooseLanguage />
+<<<<<<< Updated upstream
       <IncreaseArray />
+=======
+      <DefaultInput />
+      <DefaultCkeckBox />
+>>>>>>> Stashed changes
     </div>
   );
 }
