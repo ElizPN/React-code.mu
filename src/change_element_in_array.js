@@ -7,5 +7,17 @@ export function ChangeElement() {
   let index = 0;
   newArr[index] = "Zero";
 
-  return <div>{newArr}</div>;
+  return (
+    <div>
+      <p>{array}</p>
+
+      <button
+        onClick={() => {
+          setArray(newArr);
+        }}
+      >
+        Change first element
+      </button>
+    </div>
+  );
 }
