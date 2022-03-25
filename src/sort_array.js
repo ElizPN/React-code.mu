@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
 export function SortArray() {
-  return <div>{"default"}</div>;
+  let [array, setArray] = useState([8, 7, 6, 5, 4, 3, 2, 1]);
+  let copy = Object.assign([], array);
+  copy.sort();
+
+  return <div>{copy}</div>;
 }
