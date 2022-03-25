@@ -13,7 +13,7 @@ export function AddValueToArray() {
   }
 
   function addElement() {
-    setNotes([...notes, "olololo"]);
+    setNotes([...notes, value]);
   }
 
   return (
