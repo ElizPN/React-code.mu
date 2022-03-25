@@ -41,6 +41,7 @@ import { DefaultCkeckBox } from "./default_check_box";
 import { ReduceArray } from "./reduce_array";
 import { ChangeElement } from "./change_element_in_array";
 import { SortArray } from "./sort_array";
+import { AddValueToArray } from "./add_value_to_array";
 
 // function App() {
 //   const str1 = "label";
@@ -156,6 +157,7 @@ function App() {
       <ReduceArray />
       <ChangeElement />
       <SortArray />
+      <AddValueToArray />
     </div>
   );
 }
