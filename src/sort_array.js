@@ -5,5 +5,16 @@ export function SortArray() {
   let copy = Object.assign([], array);
   copy.sort();
 
-  return <div>{copy}</div>;
+  return (
+    <div>
+      {array}
+      <button
+        onClick={() => {
+          setArray(copy);
+        }}
+      >
+        Flip array
+      </button>
+    </div>
+  );
 }
