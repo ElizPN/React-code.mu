@@ -4,7 +4,7 @@ export function AddValueToArray() {
   let [notes, setNotes] = useState([4, 3, 2, 5, 6, 4, 3]);
   let [value, setValue] = useState("");
 
-  let copy = notes.map((elem, index) => {
+  let copy = notes.map(function (elem, index) {
     return <p key={index}>{elem}</p>;
   });
 
@@ -12,10 +12,15 @@ export function AddValueToArray() {
     setValue(event.target.value);
   }
 
+  function addElement() {
+    setNotes([...notes, "olololo"]);
+  }
+
   return (
     <div>
-      {copy}
       <input value={value} onChange={changeInput} />
+      <button onClick={addElement}>BTN</button>
+      {copy}
     </div>
   );
 }
