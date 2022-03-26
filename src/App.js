@@ -42,6 +42,7 @@ import { ReduceArray } from "./reduce_array";
 import { ChangeElement } from "./change_element_in_array";
 import { SortArray } from "./sort_array";
 import { AddValueToArray } from "./add_value_to_array";
+import { OnBlur } from "./onBlur";
 
 // function App() {
 //   const str1 = "label";
@@ -158,6 +159,7 @@ function App() {
       <ChangeElement />
       <SortArray />
       <AddValueToArray />
+      <OnBlur />
     </div>
   );
 }
