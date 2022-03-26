@@ -1,7 +1,26 @@
 import React, { useState } from "react";
 
 export function OnBlur() {
-  let [array, SetArray] = useState(["a", "b", "c", "d", "e"]);
+  let [array, setArray] = useState(["a", "b", "c", "d", "e"]);
+  let [value, setValue] = useState("");
 
-  return <div>{array}</div>;
+  let copy = array.map((elem, index) => {
+    return <li key={index}>{elem}</li>;
+  });
+
+  function addElement() {
+    setArray([copy, value]);
+  }
+
+  return (
+    <div>
+      <input
+        value={value}
+        onChange={(event) => {
+          setValue(event.target.value);
+        }}
+      />
+      <ul>{copy}</ul>
+    </div>
+  );
 }
