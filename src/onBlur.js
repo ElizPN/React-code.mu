@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 
 export function OnBlur() {
-  let [array, setArray] = useState(["a", "b", "c", "d", "e"]);
-  let [value, setValue] = useState("");
-
-  let copy = array.map((elem, index) => {
-    return <li key={index}>{elem}</li>;
-  });
+  let [lettersArray, setLettersArray] = useState(["a", "b", "c", "d", "e"]);
+  let [inputValue, setInputValue] = useState("");
 
   function addElement() {
-    setArray([copy, value]);
+    const newLettersArray = [...lettersArray, inputValue];
+    setLettersArray(newLettersArray);
   }
 
   return (
     <div>
       <input
-        value={value}
+        value={inputValue}
         onChange={(event) => {
-          setValue(event.target.value);
+          setInputValue(event.target.value);
         }}
+        onBlur={addElement}
       />
-      <ul>{copy}</ul>
+      <ul>
+        {lettersArray.map((elem, index) => (
+          <li key={index}>{elem}</li>
+        ))}
+      </ul>
     </div>
   );
 }
