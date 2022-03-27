@@ -7,6 +7,7 @@ export function OnBlur() {
   function addElement() {
     const newLettersArray = [...lettersArray, inputValue];
     setLettersArray(newLettersArray);
+    setInputValue(" ");
   }
 
   return (
@@ -18,6 +19,7 @@ export function OnBlur() {
         }}
         onBlur={addElement}
       />
+
       <ul>
         {lettersArray.map((elem, index) => (
           <li key={index}>{elem}</li>
