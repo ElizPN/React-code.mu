@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import { nanoid } from "nanoid";
 
 export function DeleteElementByIndex() {
   let [array, setArray] = useState([1, 2, 3, 4, 5, 6]);
 
   let newArray = array.map((elem, index) => (
-    <p key={index} onClick={() => deleteElement(index)}>
-      {elem}
-    </p>
+    <div key={index}>
+      <p>{elem}</p>
+      <button onClick={() => deleteElement(index)}>BTN</button>
+    </div>
   ));
 
   function deleteElement(index) {
