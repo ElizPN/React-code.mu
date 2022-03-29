@@ -46,6 +46,7 @@ import { OnBlur } from "./onBlur";
 import { DeleteElementByIndex } from "./delete_element_by_index";
 import { BindingInputsToArray } from "./binding_inputs_to_array";
 import { EditArray } from "./edit_array";
+import { EditLettersArray } from "./edit_letters_array";
 
 // function App() {
 //   const str1 = "label";
@@ -210,6 +211,8 @@ function App() {
       <BindingInputsToArray />
       <hr></hr>
       <EditArray />
+      <hr></hr>
+      <EditLettersArray />
     </div>
   );
 }
