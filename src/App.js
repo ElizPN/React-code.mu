@@ -44,6 +44,7 @@ import { SortArray } from "./sort_array";
 import { AddValueToArray } from "./add_value_to_array";
 import { OnBlur } from "./onBlur";
 import { DeleteElementByIndex } from "./delete_element_by_index";
+import { BindingInputsToArray } from "./binding_inputs_to_array";
 
 // function App() {
 //   const str1 = "label";
@@ -205,6 +206,7 @@ function App() {
       <hr></hr>
       <DeleteElementByIndex />
       <hr></hr>
+      <BindingInputsToArray />
     </div>
   );
 }
