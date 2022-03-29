@@ -17,12 +17,15 @@ export function EditArray() {
     let arrayAfterIndex = notes.slice(editNum + 1);
     setNotes([...arrayBeforeIndex, event.target.value, ...arrayAfterIndex]);
   }
-
+  console.log(notes, editNum, notes[editNum]);
   return (
     <div>
       {result}
-      <input value={editNum ? notes[editNum] : " "} onChange={changeItem} /> we
-      access to element of array and render it
+      <input
+        value={editNum === 0 || editNum ? notes[editNum] : " "}
+        onChange={changeItem}
+      />{" "}
+      we access to element of array and render it
     </div>
   );
 }
