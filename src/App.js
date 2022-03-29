@@ -45,6 +45,7 @@ import { AddValueToArray } from "./add_value_to_array";
 import { OnBlur } from "./onBlur";
 import { DeleteElementByIndex } from "./delete_element_by_index";
 import { BindingInputsToArray } from "./binding_inputs_to_array";
+import { EditArray } from "./edit_array";
 
 // function App() {
 //   const str1 = "label";
@@ -207,6 +208,8 @@ function App() {
       <DeleteElementByIndex />
       <hr></hr>
       <BindingInputsToArray />
+      <hr></hr>
+      <EditArray />
     </div>
   );
 }
