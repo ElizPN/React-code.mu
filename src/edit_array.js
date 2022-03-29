@@ -2,10 +2,21 @@ import React, { useState } from "react";
 
 export function EditArray() {
   let [notes, setNotes] = useState([1, 2, 3, 4, 5]);
+  let [editNum, setEditNum] = useState(null); // этот стейт хранит номер элемента массива который редактируется в данный момент
 
   let result = notes.map((elem, index) => {
-    return <p key={index}>{elem}</p>;
+    return (
+      <p key={index} onClick={() => setEditNum(index)}>
+        {elem}
+      </p>
+    );
   });
 
-  return <div>{result}</div>;
+  return (
+    <div>
+      {result}
+      <input value={notes[editNum]} /> we access to element of array and render
+      it
+    </div>
+  );
 }
