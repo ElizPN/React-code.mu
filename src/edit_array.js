@@ -17,7 +17,7 @@ export function EditArray() {
     let arrayAfterIndex = notes.slice(editNum + 1);
     setNotes([...arrayBeforeIndex, event.target.value, ...arrayAfterIndex]);
   }
-  console.log(notes, editNum, notes[editNum]);
+
   return (
     <div>
       {result}
