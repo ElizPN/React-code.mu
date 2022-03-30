@@ -37,6 +37,9 @@ export function EditLettersArray() {
           changeIndex === 0 || changeIndex ? lettersArray[changeIndex] : ""
         }
         onChange={changeItem} // call handler that set new state to array
+        onBlur={() => {
+          setChangeIndex("");
+        }}
       />
       {result}
     </div>
