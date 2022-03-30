@@ -47,6 +47,7 @@ import { DeleteElementByIndex } from "./delete_element_by_index";
 import { BindingInputsToArray } from "./binding_inputs_to_array";
 import { EditArray } from "./edit_array";
 import { EditLettersArray } from "./edit_letters_array";
+import { GenericFormToModifyArray } from "./generic_form_to_modify_array";
 
 // function App() {
 //   const str1 = "label";
@@ -213,6 +214,8 @@ function App() {
       <EditArray />
       <hr></hr>
       <EditLettersArray />
+      <hr></hr>
+      <GenericFormToModifyArray />
     </div>
   );
 }
