@@ -48,6 +48,7 @@ import { BindingInputsToArray } from "./binding_inputs_to_array";
 import { EditArray } from "./edit_array";
 import { EditLettersArray } from "./edit_letters_array";
 import { GenericFormToModifyArray } from "./generic_form_to_modify_array";
+import { GenericFormToModifyArray2 } from "./generic_form_to_modify_array2";
 
 // function App() {
 //   const str1 = "label";
@@ -216,6 +217,8 @@ function App() {
       <EditLettersArray />
       <hr></hr>
       <GenericFormToModifyArray />
+      <hr></hr>
+      <GenericFormToModifyArray2 />
     </div>
   );
 }
