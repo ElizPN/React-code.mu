@@ -50,6 +50,7 @@ import { EditLettersArray } from "./edit_letters_array";
 import { GenericFormToModifyArray } from "./generic_form_to_modify_array";
 import { GenericFormToModifyArray2 } from "./generic_form_to_modify_array2";
 import { GenericFormToModifyLettersArray } from "./generic_form_to_modify_letters_array";
+import { ChangeObject } from "./change_object";
 
 // function App() {
 //   const str1 = "label";
@@ -220,8 +221,10 @@ function App() {
       <GenericFormToModifyArray />
       <hr></hr>
       <GenericFormToModifyArray2 />
-      <hr></hr> */}
+      <hr></hr> 
       <GenericFormToModifyLettersArray />
+      <hr></hr> */}
+      <ChangeObject />
     </div>
   );
 }
