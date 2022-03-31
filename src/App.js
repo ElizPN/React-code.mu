@@ -49,6 +49,7 @@ import { EditArray } from "./edit_array";
 import { EditLettersArray } from "./edit_letters_array";
 import { GenericFormToModifyArray } from "./generic_form_to_modify_array";
 import { GenericFormToModifyArray2 } from "./generic_form_to_modify_array2";
+import { GenericFormToModifyLettersArray } from "./generic_form_to_modify_letters_array";
 
 // function App() {
 //   const str1 = "label";
@@ -124,7 +125,7 @@ import { GenericFormToModifyArray2 } from "./generic_form_to_modify_array2";
 function App() {
   return (
     <div>
-      <Main />
+      {/* <Main />
       <hr></hr>
       <ShowAfterClick />
       <hr></hr>
@@ -219,6 +220,8 @@ function App() {
       <GenericFormToModifyArray />
       <hr></hr>
       <GenericFormToModifyArray2 />
+      <hr></hr> */}
+      <GenericFormToModifyLettersArray />
     </div>
   );
 }
