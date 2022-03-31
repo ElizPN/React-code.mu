@@ -21,7 +21,7 @@ export function GenericFormToModifyLettersArray() {
     setArray([...array, value]);
   }
 
-  function changeItem(event) {
+  function editItem(event) {
     let arrayBeforeIndex = array.slice(0, editIndex);
     let arrayAfterIndex = array.slice(editIndex + 1);
     return setArray([
@@ -30,10 +30,15 @@ export function GenericFormToModifyLettersArray() {
       ...arrayAfterIndex,
     ]);
   }
+  function stopEdit() {
+    setEditIndex(null); //по потери фокуса инпут перейдет в режим добавления
+  }
 
   let input;
   if (editIndex) {
-    input = <input value={array[editIndex]} onChange={changeItem} />;
+    input = (
+      <input value={array[editIndex]} onChange={editItem} onBlur={stopEdit} />
+    );
   } else {
     input = <input value={value} onChange={changeValue} onBlur={addItem} />;
   }
