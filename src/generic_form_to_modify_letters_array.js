@@ -32,8 +32,11 @@ export function GenericFormToModifyLettersArray() {
   }
 
   let input;
-  //   input = <input value={value} onChange={changeValue} onBlur={addItem} />;
-  input = <input value={array[editIndex]} onChange={changeItem} />;
+  if (editIndex) {
+    input = <input value={array[editIndex]} onChange={changeItem} />;
+  } else {
+    input = <input value={value} onChange={changeValue} onBlur={addItem} />;
+  }
 
   return (
     <div>
