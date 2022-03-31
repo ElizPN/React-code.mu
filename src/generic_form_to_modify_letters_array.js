@@ -2,11 +2,15 @@ import React, { useState } from "react";
 
 export function GenericFormToModifyLettersArray() {
   const [array, setArray] = useState(["a", "b", "c", "d", "e"]);
-  // const [editIndex, setEditIndex] =  useState(null)
+  const [editIndex, setEditIndex] = useState(null);
   const [value, setValue] = useState("");
 
   let result = array.map((elem, index) => {
-    return <li key={index}>{elem}</li>;
+    return (
+      <li key={index} onClick={() => setEditIndex(index)}>
+        {elem}
+      </li>
+    );
   });
 
   function changeValue(event) {
@@ -17,8 +21,19 @@ export function GenericFormToModifyLettersArray() {
     setArray([...array, value]);
   }
 
+  function changeItem(event) {
+    let arrayBeforeIndex = array.slice(0, editIndex);
+    let arrayAfterIndex = array.slice(editIndex + 1);
+    return setArray([
+      ...arrayBeforeIndex,
+      event.target.value,
+      ...arrayAfterIndex,
+    ]);
+  }
+
   let input;
-  input = <input value={value} onChange={changeValue} onBlur={addItem} />;
+  //   input = <input value={value} onChange={changeValue} onBlur={addItem} />;
+  input = <input value={array[editIndex]} onChange={changeItem} />;
 
   return (
     <div>
