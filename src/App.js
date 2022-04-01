@@ -57,6 +57,7 @@ import {
   BindingInputsToObject2,
 } from "./binding_inputs_to_object2";
 import { ObjectArrayReactivity } from "./object_array_reactivity";
+import { DeleteElementFromObjetsArray } from "./delete_element_from_objects_array";
 
 // function App() {
 //   const str1 = "label";
@@ -235,8 +236,10 @@ function App() {
       <BindingInputToObject />
       <hr></hr> 
       <BindingInputsToObject2 />
-    <hr></hr> */}
+    <hr></hr> 
       <ObjectArrayReactivity />
+    <hr></hr> */}
+      <DeleteElementFromObjetsArray />
     </div>
   );
 }
