@@ -56,6 +56,7 @@ import {
   BindingInputsToObject,
   BindingInputsToObject2,
 } from "./binding_inputs_to_object2";
+import { ObjectArrayReactivity } from "./object_array_reactivity";
 
 // function App() {
 //   const str1 = "label";
@@ -232,8 +233,10 @@ function App() {
       <ChangeObject />
       <hr></hr>
       <BindingInputToObject />
-      <hr></hr> */}
+      <hr></hr> 
       <BindingInputsToObject2 />
+    <hr></hr> */}
+      <ObjectArrayReactivity />
     </div>
   );
 }
