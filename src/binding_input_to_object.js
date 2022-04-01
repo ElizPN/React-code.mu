@@ -34,7 +34,7 @@ export function BindingInputToObject() {
       <input
         value={obj.prop3}
         onChange={(event) => handleChangeProperty("prop3", event)}
-      />{" "}
+      />
       <br />
       {obj.prop1}-{obj.prop2}-{obj.prop3}
     </div>
