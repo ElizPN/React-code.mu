@@ -51,6 +51,11 @@ import { GenericFormToModifyArray } from "./generic_form_to_modify_array";
 import { GenericFormToModifyArray2 } from "./generic_form_to_modify_array2";
 import { GenericFormToModifyLettersArray } from "./generic_form_to_modify_letters_array";
 import { ChangeObject } from "./change_object";
+import { BindingInputToObject } from "./binding_input_to_object";
+import {
+  BindingInputsToObject,
+  BindingInputsToObject2,
+} from "./binding_inputs_to_object2";
 
 // function App() {
 //   const str1 = "label";
@@ -223,8 +228,12 @@ function App() {
       <GenericFormToModifyArray2 />
       <hr></hr> 
       <GenericFormToModifyLettersArray />
-      <hr></hr> */}
+      <hr></hr> 
       <ChangeObject />
+      <hr></hr>
+      <BindingInputToObject />
+      <hr></hr> */}
+      <BindingInputsToObject2 />
     </div>
   );
 }
