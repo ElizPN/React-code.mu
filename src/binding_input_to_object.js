@@ -9,14 +9,16 @@ const initObj = {
 export function BindingInputToObject() {
   const [obj, setObj] = useState(initObj);
 
-  //   function handleChangeProperty(prop, event) {
-  //     const copy = Object.assign({}, obj);
-  //     copy[prop] = event.target.value;
-  //     return setObj(copy);
-  //   }
+  function handleChangeProperty(prop, event) {
+    const copy = Object.assign({}, obj);
+    copy[prop] = event.target.value;
+    return setObj(copy);
+  }
 
   function handleChangeProperty(prop, event) {
-    setObj({ ...obj, ...{ [prop]: event.target.value } });
+    const newPropValue = { [prop]: event.target.value };
+    const newObject = { ...obj, ...newPropValue };
+    setObj(newObject);
   }
 
   return (
