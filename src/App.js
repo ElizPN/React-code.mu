@@ -6,8 +6,8 @@ import { OnClickCallBack } from "./onClickCallBack";
 import { FirstEvent } from "./first_event";
 import { SecondEvent } from "./second_event";
 // import { ArrayRender } from "./array_render";
-import { ArrPush } from "./array_for";
-import { ArrayList } from "./array_map";
+import { ArrPush } from "./arrays/array_for";
+import { ArrayList } from "./arrays/array_map";
 import { Users } from "./array_of_objects";
 import { Table } from "./create_table";
 import "react-native-get-random-values";
@@ -31,7 +31,7 @@ import { Languages } from "./check_box_languages";
 import { Question } from "./question";
 import { ActiveElemetn } from "./active_element";
 import { SelectCity } from "./select_city";
-import { ArrayCities } from "./array_cities";
+import { ArrayCities } from "./arrays/array_cities";
 import { YourAge } from "./your_age";
 import { Radio } from "./radio";
 import { RadioChooseLanguage } from "./radio_choose_lang";
@@ -39,17 +39,17 @@ import { IncreaseArray } from "./increase_array";
 import { DefaultInput } from "./default_value_input";
 import { DefaultCkeckBox } from "./default_check_box";
 import { ReduceArray } from "./reduce_array";
-import { ChangeElement } from "./change_element_in_array";
+import { ChangeElement } from "./arrays/change_element_in_array";
 import { SortArray } from "./sort_array";
-import { AddValueToArray } from "./add_value_to_array";
+import { AddValueToArray } from "./arrays/add_value_to_array";
 import { OnBlur } from "./onBlur";
 import { DeleteElementByIndex } from "./delete_element_by_index";
-import { BindingInputsToArray } from "./binding_inputs_to_array";
+import { BindingInputsToArray } from "./arrays/binding_inputs_to_array";
 import { EditArray } from "./edit_array";
 import { EditLettersArray } from "./edit_letters_array";
-import { GenericFormToModifyArray } from "./generic_form_to_modify_array";
-import { GenericFormToModifyArray2 } from "./generic_form_to_modify_array2";
-import { GenericFormToModifyLettersArray } from "./generic_form_to_modify_letters_array";
+import { GenericFormToModifyArray } from "./arrays/generic_form_to_modify_array";
+import { GenericFormToModifyArray2 } from "./arrays/generic_form_to_modify_array2";
+import { GenericFormToModifyLettersArray } from "./arrays/generic_form_to_modify_letters_array";
 import { ChangeObject } from "./change_object";
 import { BindingInputToObject } from "./binding_input_to_object";
 import {
@@ -59,6 +59,7 @@ import {
 import { ObjectArrayReactivity } from "./object_array_reactivity";
 import { DeleteElementFromObjetsArray } from "./delete_element_from_objects_array";
 import { ChangeElementFromObjectsArray } from "./change_element_from_objects_array";
+import { ChangePropertyOfObject } from "./change_property_of_object";
 
 // function App() {
 //   const str1 = "label";
@@ -134,7 +135,7 @@ import { ChangeElementFromObjectsArray } from "./change_element_from_objects_arr
 function App() {
   return (
     <div>
-      {/* <Main />
+      <Main />
       <hr></hr>
       <ShowAfterClick />
       <hr></hr>
@@ -229,20 +230,22 @@ function App() {
       <GenericFormToModifyArray />
       <hr></hr>
       <GenericFormToModifyArray2 />
-      <hr></hr> 
+      <hr></hr>
       <GenericFormToModifyLettersArray />
-      <hr></hr> 
+      <hr></hr>
       <ChangeObject />
       <hr></hr>
       <BindingInputToObject />
-      <hr></hr> 
+      <hr></hr>
       <BindingInputsToObject2 />
-    <hr></hr> 
+      <hr></hr>
       <ObjectArrayReactivity />
-    <hr></hr> 
+      <hr></hr>
       <DeleteElementFromObjetsArray />
-    <hr></hr> */}
+      <hr></hr>
       <ChangeElementFromObjectsArray />
+      <hr></hr>
+      <ChangePropertyOfObject />
     </div>
   );
 }
