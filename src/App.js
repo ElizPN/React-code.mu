@@ -135,7 +135,7 @@ import { ChangePropertyOfObject } from "./change_property_of_object";
 function App() {
   return (
     <div>
-      <Main />
+      {/* <Main />
       <hr></hr>
       <ShowAfterClick />
       <hr></hr>
@@ -244,8 +244,9 @@ function App() {
       <DeleteElementFromObjetsArray />
       <hr></hr>
       <ChangeElementFromObjectsArray />
-      <hr></hr>
+      <hr></hr>*/}
       <ChangePropertyOfObject />
+      <hr></hr>
     </div>
   );
 }
