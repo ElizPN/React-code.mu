@@ -21,4 +21,8 @@ const initNotes = [
   },
 ];
 
-export function ChangeElementFromObjectsArray() {}
+export function ChangeElementFromObjectsArray() {
+  const [array, setArray] = useState(initNotes);
+
+  return <div>{array}</div>;
+}
