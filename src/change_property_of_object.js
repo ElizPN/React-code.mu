@@ -21,21 +21,14 @@ const initNotes = [
   },
 ];
 
-const data = {
-  id: "JAmjRlfQT8rLTm5tG2m1L",
-  prop1: "value21 !",
-  prop2: "value22 !",
-  prop3: "value23 !",
-};
-
 const id = "JAmjRlfQT8rLTm5tG2m1L";
 const prop = "prop2";
 const value = "value22 !!";
 
 export function ChangePropertyOfObject() {
-  const [array, setArray] = useState(initNotes);
+  const [notesArray, setNotesArray] = useState(initNotes);
 
-  const result = array.map((elem) => {
+  const result = notesArray.map((elem) => {
     return (
       <p key={elem.id}>
         <span>{elem.prop1}</span>
@@ -45,5 +38,23 @@ export function ChangePropertyOfObject() {
     );
   });
 
-  return <div>{result}</div>;
+  function changeProperty() {
+    const newNotesArray = notesArray.map((elem) => {
+      if (elem.id !== id) {
+        return elem;
+      }
+
+      const copy = Object.assign({}, elem);
+      copy[prop] = value;
+      return copy;
+    });
+    setNotesArray(newNotesArray);
+  }
+
+  return (
+    <div>
+      {result}
+      <button onClick={changeProperty}>Change property of element</button>
+    </div>
+  );
 }
