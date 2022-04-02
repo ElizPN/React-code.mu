@@ -21,8 +21,48 @@ const initNotes = [
   },
 ];
 
+const data = {
+  id: "JAmjRlfQT8rLTm5tG2m1L",
+  prop1: "value21 !",
+  prop2: "value22 !",
+  prop3: "value23 !",
+};
+
 export function ChangeElementFromObjectsArray() {
   const [array, setArray] = useState(initNotes);
 
-  return <div>{array}</div>;
+  const result = array.map((elem) => {
+    return (
+      <p key={elem.id}>
+        <span>{elem.prop1}</span>
+        <span>{elem.prop2}</span>
+        <span>{elem.prop3}</span>
+      </p>
+    );
+  });
+
+  function handlerChangElement(elemForchanging) {
+    setArray(
+      array.map((elem) => {
+        if (elem.id === elemForchanging.id) {
+          return elemForchanging;
+        } else {
+          return elem;
+        }
+      })
+    );
+  }
+
+  return (
+    <div>
+      {result}
+      <button
+        onClick={() => {
+          handlerChangElement(data);
+        }}
+      >
+        Change third element
+      </button>
+    </div>
+  );
 }
