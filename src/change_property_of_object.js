@@ -22,8 +22,11 @@ const initNotes = [
 ];
 
 const id = "JAmjRlfQT8rLTm5tG2m1L";
-const prop = "prop2";
-const value = "value22 !!";
+const prop1 = "prop2";
+const prop2 = "prop3";
+
+const value1 = "value32 !!";
+const value2 = "value33 !!";
 
 export function ChangePropertyOfObject() {
   const [notesArray, setNotesArray] = useState(initNotes);
@@ -45,7 +48,8 @@ export function ChangePropertyOfObject() {
       }
 
       const copy = Object.assign({}, elem);
-      copy[prop] = value;
+      copy[prop1] = value1;
+      copy[prop2] = value2;
       return copy;
     });
     setNotesArray(newNotesArray);
