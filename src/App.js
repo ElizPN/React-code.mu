@@ -60,6 +60,7 @@ import { ObjectArrayReactivity } from "./object_array_reactivity";
 import { DeleteElementFromObjetsArray } from "./delete_element_from_objects_array";
 import { ChangeElementFromObjectsArray } from "./change_element_from_objects_array";
 import { ChangePropertyOfObject } from "./change_property_of_object";
+import { GetPropertysValue } from "./get_property's _value";
 
 // function App() {
 //   const str1 = "label";
@@ -244,9 +245,10 @@ function App() {
       <DeleteElementFromObjetsArray />
       <hr></hr>
       <ChangeElementFromObjectsArray />
-      <hr></hr>*/}
-      <ChangePropertyOfObject />
       <hr></hr>
+      <ChangePropertyOfObject />
+      <hr></hr>*/}
+      <GetPropertysValue />
     </div>
   );
 }
