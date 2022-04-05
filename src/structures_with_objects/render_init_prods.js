@@ -14,7 +14,7 @@ const initProds = [
 export function RenderInitProds() {
   const [prodArray, setProdArray] = useState(initProds);
 
-  const initProdsList = initProds.map((elem) => {
+  const initProdsList = prodArray.map((elem) => {
     return (
       <p>
         <span>{elem.name}</span>
