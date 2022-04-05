@@ -62,6 +62,7 @@ import { ChangeElementFromObjectsArray } from "./structures_with_objects/change_
 import { ChangePropertyOfObject } from "./structures_with_objects/change_property_of_object";
 import { GetPropertysValue } from "./structures_with_objects/get_propertys_value";
 import { RenderInitProds } from "./structures_with_objects/render_init_prods";
+import { DeleteElementFromObjetsArray2 } from "./structures_with_objects/delete_element_from_objects_array2";
 
 // function App() {
 //   const str1 = "label";
@@ -250,8 +251,10 @@ function App() {
       <ChangePropertyOfObject />
       <hr></hr>
       <GetPropertysValue />
-      <hr></hr> */}
+      <hr></hr> 
       <RenderInitProds />
+    <hr></hr> */}
+      <DeleteElementFromObjetsArray2 />
       <hr></hr>
     </div>
   );
