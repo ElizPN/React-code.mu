@@ -61,6 +61,7 @@ import { DeleteElementFromObjetsArray } from "./delete_element_from_objects_arra
 import { ChangeElementFromObjectsArray } from "./change_element_from_objects_array";
 import { ChangePropertyOfObject } from "./change_property_of_object";
 import { GetPropertysValue } from "./get_property's _value";
+import { RenderInitProds } from "./render_init_prods";
 
 // function App() {
 //   const str1 = "label";
@@ -136,7 +137,7 @@ import { GetPropertysValue } from "./get_property's _value";
 function App() {
   return (
     <div>
-      {/* <Main />
+      <Main />
       <hr></hr>
       <ShowAfterClick />
       <hr></hr>
@@ -247,8 +248,10 @@ function App() {
       <ChangeElementFromObjectsArray />
       <hr></hr>
       <ChangePropertyOfObject />
-      <hr></hr>*/}
+      <hr></hr>
       <GetPropertysValue />
+      <hr></hr>
+      <RenderInitProds />
     </div>
   );
 }
