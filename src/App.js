@@ -137,7 +137,7 @@ import { RenderInitProds } from "./structures_with_objects/render_init_prods";
 function App() {
   return (
     <div>
-      <Main />
+      {/* <Main />
       <hr></hr>
       <ShowAfterClick />
       <hr></hr>
@@ -250,8 +250,9 @@ function App() {
       <ChangePropertyOfObject />
       <hr></hr>
       <GetPropertysValue />
-      <hr></hr>
+      <hr></hr> */}
       <RenderInitProds />
+      <hr></hr>
     </div>
   );
 }
