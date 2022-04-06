@@ -41,9 +41,19 @@ export function FormToAddingElements() {
   return (
     <div>
       {noteArrayList}
-      <input></input>
-      <input></input>
-      <input></input>
+      <input
+        value={inputValue1}
+        onChange={(event) => setInputValue1(event.target.value)}
+      ></input>
+      <input
+        value={inputValue2}
+        onChange={(event) => setInputValue2(event.target.value)}
+      ></input>
+      <input
+        value={inputValue3}
+        onChange={(event) => setInputValue3(event.target.value)}
+      ></input>
+      <button>save</button>
     </div>
   );
 }
