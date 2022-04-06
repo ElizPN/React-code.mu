@@ -28,11 +28,19 @@ export function FormToAddingElements() {
   const [inputValue2, setInputValue2] = useState("");
   const [inputValue3, setInputValue3] = useState("");
 
-  //  const noteArrayList = noteArray.map()
+  const noteArrayList = noteArray.map((elem) => {
+    return (
+      <p key={elem.id}>
+        <span>{elem.prop1}</span>
+        <span>{elem.prop2}</span>
+        <span>{elem.prop3}</span>
+      </p>
+    );
+  });
 
   return (
     <div>
-      {}
+      {noteArrayList}
       <input></input>
       <input></input>
       <input></input>
