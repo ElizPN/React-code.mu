@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { nanoid } from "nanoid";
+
+function id() {
+  return nanoid();
+}
 
 const initNotes = [
   {
@@ -38,6 +43,16 @@ export function FormToAddingElements() {
     );
   });
 
+  function addElement() {
+    let objectOfValues = {
+      id: id(),
+      prop1: inputValue1,
+      prop2: inputValue2,
+      prop3: inputValue3,
+    };
+    return setNoteArray([...noteArray, objectOfValues]);
+  }
+
   return (
     <div>
       {noteArrayList}
@@ -53,7 +68,7 @@ export function FormToAddingElements() {
         value={inputValue3}
         onChange={(event) => setInputValue3(event.target.value)}
       ></input>
-      <button>save</button>
+      <button onClick={addElement}>save</button>
     </div>
   );
 }
