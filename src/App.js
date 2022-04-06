@@ -64,6 +64,7 @@ import { GetPropertysValue } from "./structures_with_objects/get_propertys_value
 import { RenderInitProds } from "./structures_with_objects/render_init_prods";
 import { DeleteElementFromObjetsArray2 } from "./structures_with_objects/delete_element_from_objects_array2";
 import { FormToAddingElements } from "./structures_with_objects/form_to_adding_elements_to_objects_array";
+import { FormToAddingElements2 } from "./structures_with_objects/form_to_adding_elements_to_objects_array2";
 
 // function App() {
 //   const str1 = "label";
@@ -256,8 +257,10 @@ function App() {
       <RenderInitProds />
     <hr></hr> 
       <DeleteElementFromObjetsArray2 />
-      <hr></hr> */}
+      <hr></hr> 
       <FormToAddingElements />
+    <hr></hr> */}
+      <FormToAddingElements2 />
     </div>
   );
 }

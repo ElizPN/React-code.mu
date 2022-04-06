@@ -5,58 +5,45 @@ function id() {
   return nanoid();
 }
 
-const initNotes = [
-  {
-    id: "GYi9G_uC4gBF1e2SixDvu",
-    prop1: "value11",
-    prop2: "value12",
-    prop3: "value13",
-  },
-  {
-    id: "IWSpfBPSV3SXgRF87uO74",
-    prop1: "value21",
-    prop2: "value22",
-    prop3: "value23",
-  },
-  {
-    id: "JAmjRlfQT8rLTm5tG2m1L",
-    prop1: "value31",
-    prop2: "value32",
-    prop3: "value33",
-  },
+const initProds = [
+  { id: id(), name: "prod1", catg: "catg1", cost: 100 },
+  { id: id(), name: "prod2", catg: "catg2", cost: 200 },
+  { id: id(), name: "prod3", catg: "catg3", cost: 300 },
 ];
 
-export function FormToAddingElements() {
-  const [noteArray, setNoteArray] = useState(initNotes);
+export function FormToAddingElements2() {
+  const [prodArray, setProdArray] = useState(initProds);
 
   const [inputValue1, setInputValue1] = useState("");
   const [inputValue2, setInputValue2] = useState("");
   const [inputValue3, setInputValue3] = useState("");
 
-  const noteArrayList = noteArray.map((elem) => {
+  const initProdsList = prodArray.map((elem) => {
     return (
-      <p key={elem.id}>
-        <span>{elem.prop1}</span>
-        <span>{elem.prop2}</span>
-        <span>{elem.prop3}</span>
-      </p>
+      <tr key={elem.id}>
+        <td>{elem.name}</td>
+        <td>{elem.catg}</td>
+        <td>{elem.cost}</td>
+      </tr>
     );
   });
 
   function addElement() {
     let objectOfValues = {
       id: id(),
-      prop1: inputValue1,
-      prop2: inputValue2,
-      prop3: inputValue3,
+      name: inputValue1,
+      catg: inputValue2,
+      cost: inputValue3,
     };
-
-    return setNoteArray([...noteArray, objectOfValues]);
+    console.log(prodArray);
+    return setProdArray([...prodArray, objectOfValues]);
   }
 
   return (
     <div>
-      {noteArrayList}
+      <table>
+        <tbody>{initProdsList}</tbody>
+      </table>
       <input
         value={inputValue1}
         onChange={(event) => setInputValue1(event.target.value)}
