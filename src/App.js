@@ -65,6 +65,7 @@ import { RenderInitProds } from "./structures_with_objects/render_init_prods";
 import { DeleteElementFromObjetsArray2 } from "./structures_with_objects/delete_element_from_objects_array2";
 import { FormToAddingElements } from "./structures_with_objects/form_to_adding_elements_to_objects_array";
 import { FormToAddingElements2 } from "./structures_with_objects/form_to_adding_elements_to_objects_array2";
+import { FormToAddingElements3 } from "./structures_with_objects/form_to_adding_elements_to_objects_array3";
 
 // function App() {
 //   const str1 = "label";
@@ -259,8 +260,10 @@ function App() {
       <DeleteElementFromObjetsArray2 />
       <hr></hr> 
       <FormToAddingElements />
-    <hr></hr> */}
+    <hr></hr> 
       <FormToAddingElements2 />
+    <hr></hr> */}
+      <FormToAddingElements3 />
     </div>
   );
 }
