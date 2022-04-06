@@ -35,8 +35,12 @@ export function FormToAddingElements2() {
       catg: inputValue2,
       cost: inputValue3,
     };
-    console.log(prodArray);
-    return setProdArray([...prodArray, objectOfValues]);
+    return (
+      setProdArray([...prodArray, objectOfValues]),
+      setInputValue1(""),
+      setInputValue2(""),
+      setInputValue3("")
+    );
   }
 
   return (
