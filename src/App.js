@@ -66,6 +66,7 @@ import { DeleteElementFromObjetsArray2 } from "./structures_with_objects/delete_
 import { FormToAddingElements } from "./structures_with_objects/form_to_adding_elements_to_objects_array";
 import { FormToAddingElements2 } from "./structures_with_objects/form_to_adding_elements_to_objects_array2";
 import { FormToAddingElements3 } from "./structures_with_objects/form_to_adding_elements_to_objects_array3";
+import { FormToAddingElements4 } from "./structures_with_objects/form_to_adding_elements_to_objects_array4";
 
 // function App() {
 //   const str1 = "label";
@@ -262,8 +263,10 @@ function App() {
       <FormToAddingElements />
     <hr></hr> 
       <FormToAddingElements2 />
-    <hr></hr> */}
+    <hr></hr>
       <FormToAddingElements3 />
+    <hr></hr> */}
+      <FormToAddingElements4 />
     </div>
   );
 }
