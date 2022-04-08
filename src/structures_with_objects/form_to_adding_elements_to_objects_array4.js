@@ -14,9 +14,9 @@ const initProds = [
 function getInitObject() {
   return {
     id: id(),
-    prop1: "jkjk",
-    prop2: "uuu",
-    prop3: "iui",
+    name: "",
+    catg: "",
+    cost: "",
   };
 }
 
@@ -35,10 +35,13 @@ export function FormToAddingElements4() {
   });
 
   function addElement() {
-    setProdArray(...prodArray, obj);
+    setProdArray([...prodArray, obj]);
+    setObj(getInitObject());
   }
 
-  function changeProperty() {}
+  function changeProperty(prop, event) {
+    setObj({ ...obj, [prop]: event.target.value });
+  }
 
   return (
     <div>
@@ -46,10 +49,19 @@ export function FormToAddingElements4() {
         <tbody>{initProdsList}</tbody>
       </table>
 
-      <input value={obj.prop1} />
-      <input value={obj.prop2} />
-      <input value={obj.prop3} />
-      <button onClick={addElement}></button>
+      <input
+        value={obj.name}
+        onChange={(event) => changeProperty("name", event)}
+      />
+      <input
+        value={obj.catg}
+        onChange={(event) => changeProperty("catg", event)}
+      />
+      <input
+        value={obj.cost}
+        onChange={(event) => changeProperty("cost", event)}
+      />
+      <button onClick={addElement}>add element</button>
     </div>
   );
 }
