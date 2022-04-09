@@ -13,6 +13,7 @@ function id() {
 
 export function EditObjectArray2() {
   const [prodArray, setProdArray] = useState(initProds);
+  const [editId, setEditId] = useState(null);
 
   const prodArrayList = prodArray.map((elem) => {
     return (
@@ -21,7 +22,7 @@ export function EditObjectArray2() {
         <td>{elem.catg}</td>
         <td>{elem.cost}</td>
         <td>
-          <button>Change</button>
+          <button onClick={() => setEditId(elem.id)}>Change</button>
         </td>
       </tr>
     );
