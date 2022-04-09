@@ -28,9 +28,48 @@ export function EditObjectArray2() {
     );
   });
 
+  function getValue(prop) {
+    return prodArray.reduce((res, elem) => {
+      if (elem.id === editId) {
+        return elem[prop];
+      } else {
+        return res;
+      }
+    }, "");
+  }
+
+  function changeItem(prop, event) {
+    let newItem = prodArray.map((elem) => {
+      if (elem.id === editId) {
+        return { ...elem, [prop]: event.target.value };
+      } else {
+        return elem;
+      }
+    });
+    setProdArray(newItem);
+  }
+
+  const prop1Value = getValue("name");
+  const prop2Value = getValue("catg");
+  const prop3Value = getValue("cost");
+
   return (
-    <table>
-      <tbody>{prodArrayList}</tbody>
-    </table>
+    <div>
+      <table>
+        <tbody>{prodArrayList}</tbody>
+      </table>
+      <input
+        value={prop1Value}
+        onChange={(event) => changeItem("name", event)}
+      ></input>
+      <input
+        value={prop2Value}
+        onChange={(event) => changeItem("catg", event)}
+      ></input>
+      <input
+        value={prop3Value}
+        onChange={(event) => changeItem("cost", event)}
+      ></input>
+    </div>
   );
 }
