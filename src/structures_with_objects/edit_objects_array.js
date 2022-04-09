@@ -39,8 +39,6 @@ export function GenericFormToModifyObjectArray() {
   function getValue(prop) {
     return noteArray.reduce((res, elem) => {
       if (elem.id === editId) {
-        console.log("elem[prop] ", elem[prop]);
-        console.log("res", res);
         return elem[prop];
       } else {
         return res;
