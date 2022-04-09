@@ -67,7 +67,8 @@ import { FormToAddingElements } from "./structures_with_objects/form_to_adding_e
 import { FormToAddingElements2 } from "./structures_with_objects/form_to_adding_elements_to_objects_array2";
 import { FormToAddingElements3 } from "./structures_with_objects/form_to_adding_elements_to_objects_array3";
 import { FormToAddingElements4 } from "./structures_with_objects/form_to_adding_elements_to_objects_array4";
-import { GenericFormToModifyObjectArray } from "./structures_with_objects/edit_objects_array";
+import { EditObjectArray } from "./structures_with_objects/edit_objects_array";
+import { EditObjectArray2 } from "./structures_with_objects/edit_objects_array2";
 
 // function App() {
 //   const str1 = "label";
@@ -268,8 +269,10 @@ function App() {
       <FormToAddingElements3 />
     <hr></hr> 
       <FormToAddingElements4 />
-    <hr></hr> */}
-      <GenericFormToModifyObjectArray />
+    <hr></hr> 
+      <EditObjectArray />
+      <hr></hr> */}
+      <EditObjectArray2 />
     </div>
   );
 }

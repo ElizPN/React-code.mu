@@ -21,7 +21,7 @@ const initNotes = [
   },
 ];
 
-export function GenericFormToModifyObjectArray() {
+export function EditObjectArray() {
   const [noteArray, setNoteArray] = useState(initNotes);
   const [editId, setEditId] = useState(null);
 
