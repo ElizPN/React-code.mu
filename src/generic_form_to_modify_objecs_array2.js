@@ -43,9 +43,61 @@ export function GenericFormToModifyObjectsArray2() {
     );
   });
 
+  function getValue(prop) {
+    if (editId) {
+      return prodArray.reduce(
+        (res, elem) => (elem.id === editId ? elem[prop] : res),
+        " "
+      );
+    } else {
+      return obj[prop];
+    }
+  }
+
+  // change item of array and set new state (with new item) to array;  set new state for object that will bw added as new element to array
+  function changeItem(prop, event) {
+    const newProdArray = prodArray.map((elem) =>
+      elem.id === editId ? { ...elem, [prop]: event.target.value } : elem
+    );
+    if (editId) {
+      setProdArray(newProdArray);
+    } else {
+      setObj({ ...obj, [prop]: event.target.value });
+    }
+  }
+
+  // save item and clean input area
+  function saveItem() {
+    if (editId) {
+      setEditId(null);
+    } else {
+      setProdArray([...prodArray, obj]);
+      setObj(getInitObj());
+    }
+  }
+
+  const prop1Value = getValue("name");
+  const prop2Value = getValue("catg");
+  const prop3Value = getValue("cost");
+
   return (
-    <table>
-      <tbody>{prodArrayList}</tbody>
-    </table>
+    <div>
+      <table>
+        <tbody>{prodArrayList}</tbody>
+      </table>
+      <input
+        value={prop1Value}
+        onChange={(event) => changeItem("name", event)}
+      ></input>
+      <input
+        value={prop2Value}
+        onChange={(event) => changeItem("catg", event)}
+      ></input>
+      <input
+        value={prop3Value}
+        onChange={(event) => changeItem("cost", event)}
+      ></input>
+      <button onClick={saveItem}>Save</button>
+    </div>
   );
 }
