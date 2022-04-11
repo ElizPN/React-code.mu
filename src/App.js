@@ -71,7 +71,7 @@ import { EditObjectArray } from "./structures_with_objects/edit_objects_array";
 import { EditObjectArray2 } from "./structures_with_objects/edit_objects_array2";
 import { GenericFormToModifyObjectsArray } from "./structures_with_objects/generic_form_to_modify_objecs_array";
 import { GenericFormToModifyObjectsArray2 } from "./structures_with_objects/generic_form_to_modify_objecs_array2";
-import { ShowTextInParagraphs } from "./show_text_in_paragraphs";
+import { ShowTextInParagraphs } from "./editing/show_text_in_paragraphs";
 
 // function App() {
 //   const str1 = "label";
