@@ -72,6 +72,7 @@ import { EditObjectArray2 } from "./structures_with_objects/edit_objects_array2"
 import { GenericFormToModifyObjectsArray } from "./structures_with_objects/generic_form_to_modify_objecs_array";
 import { GenericFormToModifyObjectsArray2 } from "./structures_with_objects/generic_form_to_modify_objecs_array2";
 import { ShowTextInParagraphs } from "./editing/show_text_in_paragraphs";
+import { ShowArrayInParagraph } from "./editing/show_array_in_paragraph";
 
 // function App() {
 //   const str1 = "label";
@@ -280,9 +281,13 @@ function App() {
       <GenericFormToModifyObjectsArray />
     <hr></hr> 
       <GenericFormToModifyObjectsArray2 />
-    <hr></hr> */}
+    <hr></hr> 
       <p>Editing</p>
       <ShowTextInParagraphs />
+    <hr></hr> 
+      <ShowTextInParagraphs />
+    <hr></hr> */}
+      <ShowArrayInParagraph />
     </div>
   );
 }
