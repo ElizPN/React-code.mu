@@ -39,9 +39,52 @@ export function ShowArrayInList() {
   const [prodsArray, setProdsArray] = useState(initProds);
 
   const prodsArraylist = prodsArray.map((elem) => {
+    let descrip;
+    let comment;
+
+    if (elem.showDesc) {
+      descrip = elem.desc;
+    }
+
+    if (elem.showComm) {
+      comment = elem.comm;
+    }
+
+    function showDescription(id) {
+      const arrayWithDescrip = prodsArray.map((elem) => {
+        if (elem.id === id) {
+          return { ...elem, showDesc: !elem.showDesc };
+        } else {
+          return elem;
+        }
+      });
+      setProdsArray(arrayWithDescrip);
+    }
+
+    function showComment(id) {
+      const arrayWithComment = prodsArray.map((elem) => {
+        if (elem.id === id) {
+          return { ...elem, showComm: !elem.showComm };
+        } else {
+          return elem;
+        }
+      });
+      setProdsArray(arrayWithComment);
+    }
+
     return (
       <li key={elem.id}>
-        {elem.name}, {elem.cost}, {elem.desc},{elem.comm}{" "}
+        {elem.name}, {elem.cost}, {descrip},{comment}
+        <button onClick={() => showDescription(elem.id)}>
+          Show description
+        </button>
+        <button
+          onClick={() => {
+            showComment(elem.id);
+          }}
+        >
+          Show comment
+        </button>
       </li>
     );
   });
