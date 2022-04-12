@@ -73,9 +73,9 @@ import { GenericFormToModifyObjectsArray } from "./structures_with_objects/gener
 import { GenericFormToModifyObjectsArray2 } from "./structures_with_objects/generic_form_to_modify_objecs_array2";
 import { ShowTextInParagraphs } from "./editing/show_text_in_paragraphs";
 import { ShowArrayInParagraph } from "./editing/show_array_in_paragraph";
-import { ShowArrayInList } from "./structures_with_objects/show_array_in_list";
-import { FlipParagraphToInput } from "./editing/flip_paragraph_to_input";
-import { FlipParagraphToInput2 } from "./flip_paragraph_to_input2";
+import { ShowArrayInList } from "./editing/show_array_in_list";
+import { ReplaceParagraphToInput } from "./editing/replace_paragraph_to_input";
+import { ReplaceParagraphToInput2 } from "./editing/replace_paragraph_to_input2";
 
 // function App() {
 //   const str1 = "label";
@@ -293,10 +293,11 @@ function App() {
       <ShowArrayInParagraph />
     <hr></hr> 
       <ShowArrayInList />
-    <hr></hr> 
-      <FlipParagraphToInput />
+      <hr></hr>
+      <ReplaceParagraphToInput />
+      <hr></hr>
+      <ReplaceParagraphToInput2 />
     <hr></hr> */}
-      <FlipParagraphToInput2 />
     </div>
   );
 }

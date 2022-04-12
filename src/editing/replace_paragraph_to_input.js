@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function FlipParagraphToInput() {
+export function ReplaceParagraphToInput() {
   const [paragValue, setParagValue] = useState("some text");
   const [isEdit, setIsEdiit] = useState(false); // true - paragraph is editing; false - the text shows
 
