@@ -8,14 +8,19 @@ export function FlipParagraphToInput2() {
   if (!isEdit) {
     elem = <span>{paragValue}</span>;
   } else {
-    elem = <input value={paragValue} />;
+    elem = (
+      <input
+        value={paragValue}
+        onChange={(event) => setParagValue(event.target.value)}
+      />
+    );
   }
 
   return (
     <div>
       <p>{elem}</p>
       <button onClick={() => setIsEdiit(true)}>Edit value</button>
-      <button>Show value</button>
+      <button onClick={() => setIsEdiit(false)}>Show value</button>
     </div>
   );
 }
