@@ -76,6 +76,7 @@ import { ShowArrayInParagraph } from "./editing/show_array_in_paragraph";
 import { ShowArrayInList } from "./editing/show_array_in_list";
 import { ReplaceParagraphToInput } from "./editing/replace_paragraph_to_input";
 import { ReplaceParagraphToInput2 } from "./editing/replace_paragraph_to_input2";
+import { EditListElementsWithInput } from "./editing/edit_list_elements_with_input";
 
 // function App() {
 //   const str1 = "label";
@@ -298,6 +299,7 @@ function App() {
       <hr></hr>
       <ReplaceParagraphToInput2 />
     <hr></hr> */}
+      <EditListElementsWithInput />
     </div>
   );
 }
