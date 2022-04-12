@@ -6,19 +6,21 @@ export function FlipParagraphToInput() {
 
   let elem;
   if (!isEdit) {
-    elem = <span>{paragValue}</span>;
+    elem = <span>{paragValue}</span>; // show paragrarh with text
   } else {
-    elem = <input value={paragValue} />;
+    elem = (
+      <input
+        value={paragValue} // show input with text
+        onChange={(event) => setParagValue(event.target.value)} // give possible to change value of input
+        onBlur={() => setIsEdiit(false)} // change to mode "show"
+      />
+    );
   }
 
   return (
     <p>
-      <span
-        onClick={() => setIsEdiit(true)}
-        onChange={(event) => setParagValue(event.target.value)}
-      >
-        {elem}
-      </span>
+      <span onClick={() => setIsEdiit(true)}>{elem}</span>{" "}
+      {/*change to mode "edit" */}
     </p>
   );
 }
