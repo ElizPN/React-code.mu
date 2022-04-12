@@ -13,7 +13,7 @@ export function FlipParagraphToInput() {
 
   return (
     <p>
-      <span>{elem}</span>
+      <span onClick={() => setIsEdiit(true)}>{elem}</span>
     </p>
   );
 }
