@@ -10,9 +10,21 @@ export function EditListElementsWithInput() {
   const [notesArray, setNotesArray] = useState(initNotes);
 
   function startEdit(index) {
-    const copyNotesArray = Object.assign([], notesArray);
-    copyNotesArray[index].isEdit = true;
-    setNotesArray(copyNotesArray);
+    const newNotesArray = Object.assign([], notesArray);
+    newNotesArray[index].isEdit = true;
+    setNotesArray(newNotesArray);
+  }
+
+  function changeElem(index, event) {
+    const newNotesArray = Object.assign([], notesArray);
+    newNotesArray[index].text = event.target.value;
+    setNotesArray(newNotesArray);
+  }
+
+  function stopEdit(index) {
+    const newNotesArray = Object.assign([], notesArray);
+    newNotesArray[index].isEdit = false;
+    setNotesArray(newNotesArray);
   }
 
   const notesArrayLiist = notesArray.map((elem, index) => {
@@ -20,7 +32,13 @@ export function EditListElementsWithInput() {
     if (!elem.isEdit) {
       item = <span onClick={() => startEdit(index)}>{elem.text}</span>;
     } else {
-      item = <input value={elem.text} />;
+      item = (
+        <input
+          value={elem.text}
+          onChange={(event) => changeElem(index, event)}
+          onBlur={() => stopEdit(index)}
+        />
+      );
     }
 
     return <li key={index}>{item}</li>;
