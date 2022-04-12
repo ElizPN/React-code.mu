@@ -74,6 +74,7 @@ import { GenericFormToModifyObjectsArray2 } from "./structures_with_objects/gene
 import { ShowTextInParagraphs } from "./editing/show_text_in_paragraphs";
 import { ShowArrayInParagraph } from "./editing/show_array_in_paragraph";
 import { ShowArrayInList } from "./structures_with_objects/show_array_in_list";
+import { FlipParagraphToInput } from "./editing/flip_paragraph_to_input";
 
 // function App() {
 //   const str1 = "label";
@@ -289,8 +290,10 @@ function App() {
       <ShowTextInParagraphs />
     <hr></hr>
       <ShowArrayInParagraph />
-    <hr></hr> */}
+    <hr></hr> 
       <ShowArrayInList />
+    <hr></hr> */}
+      <FlipParagraphToInput />
     </div>
   );
 }
