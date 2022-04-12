@@ -11,5 +11,11 @@ export function FlipParagraphToInput2() {
     elem = <input value={paragValue} />;
   }
 
-  return <p>{elem}</p>;
+  return (
+    <div>
+      <p>{elem}</p>
+      <button onClick={() => setIsEdiit(true)}>Edit value</button>
+      <button>Show value</button>
+    </div>
+  );
 }
