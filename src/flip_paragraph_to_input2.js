@@ -4,5 +4,12 @@ export function FlipParagraphToInput2() {
   const [paragValue, setParagValue] = useState("some text");
   const [isEdit, setIsEdiit] = useState(false);
 
-  return <p>{paragValue}</p>;
+  let elem;
+  if (!isEdit) {
+    elem = <span>{paragValue}</span>;
+  } else {
+    elem = <input value={paragValue} />;
+  }
+
+  return <p>{elem}</p>;
 }
