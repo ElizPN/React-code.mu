@@ -9,6 +9,12 @@ const initNotes = [
 export function EditListElementsWithInput2() {
   const [notesArray, setNotesArray] = useState(initNotes);
 
+  function changeMode(index) {
+    const newNotesArray = Object.assign([], notesArray);
+    newNotesArray[index].isEdit = !newNotesArray[index].isEdit;
+    setNotesArray(newNotesArray);
+  }
+
   const newNotesArray = notesArray.map((elem, index) => {
     let item;
     if (!elem.isEdit) {
@@ -16,7 +22,12 @@ export function EditListElementsWithInput2() {
     } else {
       item = <input value={elem.text} />;
     }
-    return <li key={index}>{item}</li>;
+    return (
+      <li key={index}>
+        {item}
+        <button onClick={() => changeMode(index)}>B</button>
+      </li>
+    );
   });
 
   return <ul>{newNotesArray}</ul>;
