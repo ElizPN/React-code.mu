@@ -10,7 +10,13 @@ export function EditListElementsWithInput2() {
   const [notesArray, setNotesArray] = useState(initNotes);
 
   const newNotesArray = notesArray.map((elem, index) => {
-    return <li key={index}>{elem.text}</li>;
+    let item;
+    if (!elem.isEdit) {
+      item = <span>{elem.text}</span>;
+    } else {
+      item = <input value={elem.text} />;
+    }
+    return <li key={index}>{item}</li>;
   });
 
   return <ul>{newNotesArray}</ul>;
