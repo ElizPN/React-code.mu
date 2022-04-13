@@ -78,6 +78,7 @@ import { ReplaceParagraphToInput } from "./editing/replace_paragraph_to_input";
 import { ReplaceParagraphToInput2 } from "./editing/replace_paragraph_to_input2";
 import { EditListElementsWithInput } from "./editing/edit_list_elements_with_input";
 import { EditListElementsWithInput2 } from "./editing/edit_list_elements_with_input2";
+import { EditTableWithInput } from "./editing/edit_table_wiith_input";
 
 // function App() {
 //   const str1 = "label";
@@ -301,8 +302,10 @@ function App() {
       <ReplaceParagraphToInput2 />
     <hr></hr> 
       <EditListElementsWithInput />
-    <hr></hr> */}
+    <hr></hr> 
       <EditListElementsWithInput2 />
+    <hr></hr> */}
+      <EditTableWithInput />
     </div>
   );
 }
