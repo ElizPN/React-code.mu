@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ChangeElement } from "../arrays/change_element_in_array";
 
 const initNotes = [
   { text: "note1", isEdit: false },
