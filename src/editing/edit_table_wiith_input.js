@@ -61,27 +61,35 @@ export function EditTableWithInput() {
   });
 
   function swichMode(id, name, event) {
-    const newNotesArray = notesArray.map((elem) => {
-      if (elem.id === id) {
-        const newFields = elem.fields.map((field) => {
-          if (field.name === name) {
-            return {
-              ...field,
-              isEdit: event ? true : !field.isEdit, // event is send only when field.isEdit = true
-              value: event ? event.target.value : field.value,
-            };
-          } else {
-            return field;
-          }
-        });
-        return {
-          id,
-          fields: newFields,
-        };
-      } else {
+    const createNewNotesArray = (elem) => {
+      if (elem.id !== id) {
         return elem;
       }
-    });
+
+      const createNewFields = (field) => {
+        if (field.name !== name) {
+          return field;
+        }
+
+        const isEdit = event ? true : !field.isEdit;
+        const value = event ? event.target.value : field.value;
+        const newField = {
+          ...field,
+          isEdit,
+          value,
+        };
+        return newField;
+      };
+
+      const fields = elem.fields.map(createNewFields);
+      const newElem = {
+        id,
+        fields,
+      };
+      return newElem;
+    };
+
+    const newNotesArray = notesArray.map(createNewNotesArray);
     setNotesArray(newNotesArray);
   }
 
