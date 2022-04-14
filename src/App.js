@@ -79,6 +79,8 @@ import { ReplaceParagraphToInput2 } from "./editing/replace_paragraph_to_input2"
 import { EditListElementsWithInput } from "./editing/edit_list_elements_with_input";
 import { EditListElementsWithInput2 } from "./editing/edit_list_elements_with_input2";
 import { EditTableWithInput } from "./editing/edit_table_wiith_input";
+import { SimpleUser } from "./components/simple_user";
+import { NewProduct } from "./components/new_product";
 
 // function App() {
 //   const str1 = "label";
@@ -288,7 +290,7 @@ function App() {
     <hr></hr> 
       <GenericFormToModifyObjectsArray2 />
     <hr></hr> 
-      <p>Editing</p>
+      <p>EDITING</p>
       <ShowTextInParagraphs />
     <hr></hr> 
       <ShowTextInParagraphs />
@@ -304,8 +306,17 @@ function App() {
       <EditListElementsWithInput />
     <hr></hr> 
       <EditListElementsWithInput2 />
-    <hr></hr> */}
+    <hr></hr> 
       <EditTableWithInput />
+    <hr></hr> 
+    <p>COMPONENTS</p> 
+      <SimpleUser />
+      <SimpleUser />
+      <SimpleUser />
+      <hr></hr> */}
+      <NewProduct name="product1" cost="100" />
+      <NewProduct name="product2" cost="200" />
+      <NewProduct name="product3" cost="300" />
     </div>
   );
 }
