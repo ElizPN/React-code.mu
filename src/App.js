@@ -82,6 +82,7 @@ import { EditTableWithInput } from "./editing/edit_table_wiith_input";
 import { SimpleUser } from "./components/simple_user";
 import { NewProduct } from "./components/new_product";
 import { Employee } from "./employee";
+import { ParentComponennt } from "./components/parent_compotent";
 
 // function App() {
 //   const str1 = "label";
@@ -318,7 +319,7 @@ function App() {
       <NewProduct name="product1" cost="100" />
       <NewProduct name="product2" cost="200" />
       <NewProduct name="product3" cost="300" />
-    <hr></hr> */}
+    <hr></hr> 
       <Employee
         name="Nicolas"
         surname="Kaminski"
@@ -337,6 +338,8 @@ function App() {
         position="Manager"
         salary="4000"
       />
+       <hr></hr> */}
+      <ParentComponennt />
     </div>
   );
 }
