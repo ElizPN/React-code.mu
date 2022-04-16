@@ -8,32 +8,27 @@ function id() {
   return nanoid();
 }
 
-const user = [
+const users = [
   { id: id(), name: "Ron", surname: "Rogan", age: 30 },
   { id: id(), name: "Kenny", surname: "Kalvin", age: 31 },
   { id: id(), name: "Nicolas", surname: "Tiger", age: 33 },
 ];
 
 export function ParentComponennt() {
+  const userResult = users.map((user) => {
+    return (
+      <UserData
+        key={user.id}
+        name={user.name}
+        surname={user.name}
+        age={user.age}
+      />
+    );
+  });
+
   return (
     <table>
-      <tbody>
-        <UserData
-          name={user[0].name}
-          surname={user[0].surname}
-          age={user[0].age}
-        />
-        <UserData
-          name={user[1].name}
-          surname={user[1].surname}
-          age={user[1].age}
-        />
-        <UserData
-          name={user[2].name}
-          surname={user[2].surname}
-          age={user[2].age}
-        />
-      </tbody>
+      <tbody>{userResult}</tbody>
     </table>
   );
 }
