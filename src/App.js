@@ -83,6 +83,7 @@ import { SimpleUser } from "./components/simple_user";
 import { NewProduct } from "./components/new_product";
 import { Employee } from "./employee";
 import { ParentComponennt } from "./components/parent_compotent";
+import { Products } from "./components/products_parent";
 
 // function App() {
 //   const str1 = "label";
@@ -338,8 +339,10 @@ function App() {
         position="Manager"
         salary="4000"
       />
-       <hr></hr> */}
+       <hr></hr> 
       <ParentComponennt />
+    <hr></hr> */}
+      <Products />
     </div>
   );
 }
