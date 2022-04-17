@@ -342,9 +342,9 @@ function App() {
       />
        <hr></hr> 
       <ParentComponennt />
-    <hr></hr> 
-      <Products />
     <hr></hr> */}
+      <Products />
+      <hr></hr>
       <UsersParent />
     </div>
   );

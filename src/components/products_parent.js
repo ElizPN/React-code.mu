@@ -16,7 +16,9 @@ export function Products() {
   const [prodsArray, setProdsArray] = useState(initProds);
 
   const prodsArrayResult = prodsArray.map((prod) => {
-    return <Product key={prod.id} name={prod.name} cost={prod.cost} />;
+    return (
+      <Product key={prod.id} id={prod.id} name={prod.name} cost={prod.cost} />
+    );
   });
 
   return <div>{prodsArrayResult}</div>;
