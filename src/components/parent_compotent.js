@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { ChildProduct } from "./chiild_product";
-import { ChildComponent } from "./child_component";
 import { nanoid } from "nanoid";
 import { UserData } from "./user_data";
 
