@@ -7,9 +7,9 @@ function id() {
 }
 
 const initProds = [
-  { id: id(), name: "product1", cost: 100 },
-  { id: id(), name: "product2", cost: 200 },
-  { id: id(), name: "product3", cost: 300 },
+  { id: id(), name: "product1", cost: 100, inCart: false },
+  { id: id(), name: "product2", cost: 200, inCart: false },
+  { id: id(), name: "product3", cost: 300, inCart: false },
 ];
 
 export function Products() {
@@ -17,9 +17,26 @@ export function Products() {
 
   const prodsArrayResult = prodsArray.map((prod) => {
     return (
-      <Product key={prod.id} id={prod.id} name={prod.name} cost={prod.cost} />
+      <Product
+        key={prod.id}
+        id={prod.id}
+        name={prod.name}
+        cost={prod.cost}
+        inCart={prod.inCart}
+        addToCart={addToCart}
+      />
     );
   });
+
+  function addToCart(id) {
+    const newProdsArray = prodsArray.map((prod) => {
+      if (prod.id === id) {
+        prod.inCart = true;
+      }
+      return prod;
+    });
+    setProdsArray(newProdsArray);
+  }
 
   return <div>{prodsArrayResult}</div>;
 }
