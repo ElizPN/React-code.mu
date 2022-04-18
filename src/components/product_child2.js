@@ -6,7 +6,7 @@ export function ProductChild2({ id, name, cost, isEdit }) {
       <span> {name}</span>
       <span> {cost}</span>
       <span> {isEdit}</span>
-      <button onClick={() => toggleMode(id)}>Edit</button>
+      <button onClick={() => toggleMode(id)}>{isEdit ? "Save" : "Edit"}</button>
     </div>
   );
 }
