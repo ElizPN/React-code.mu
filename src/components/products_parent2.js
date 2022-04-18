@@ -24,6 +24,7 @@ export function ProductsParent2() {
         cost={prod.cost}
         isEdit={prod.isEdit}
         toggleMode={toggleMode}
+        editProd={editProd}
       />
     );
   });
@@ -32,6 +33,17 @@ export function ProductsParent2() {
     const newProdsArray = prodsArray.map((prod) => {
       if (prod.id === id) {
         prod.isEdit = !prod.isEdit;
+      }
+      return prod;
+    });
+    setProdsArray(newProdsArray);
+  }
+
+  function editProd(id, field, event) {
+    // field - this is value of one of our properyies(name or cost)
+    const newProdsArray = prodsArray.map((prod) => {
+      if (prod.id === id) {
+        prod[field] = event.target.value; // here we edit value of property (name or cost)
       }
       return prod;
     });
