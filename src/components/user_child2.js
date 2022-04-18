@@ -7,25 +7,25 @@ export function UserChild2({
   age,
   isEdit,
   toggleMode,
-  editProd,
+  editUser,
 }) {
   return (
     <div>
       {isEdit ? (
-        <input value={name} onChange={(event) => editProd(id, name, event)} />
+        <input value={name} onChange={(event) => editUser(id, "name", event)} />
       ) : (
         <span>{name}</span>
       )}
       {isEdit ? (
         <input
           value={surname}
-          onChange={(event) => editProd(id, surname, event)}
+          onChange={(event) => editUser(id, "surname", event)}
         />
       ) : (
         <span>{surname}</span>
       )}
       {isEdit ? (
-        <input value={age} onChange={(event) => editProd(id, age, event)} />
+        <input value={age} onChange={(event) => editUser(id, "age", event)} />
       ) : (
         <span>{age}</span>
       )}

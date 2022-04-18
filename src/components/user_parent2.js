@@ -25,6 +25,7 @@ export function UsersParent2() {
         age={user.age}
         isEdit={user.isEdit}
         toggleMode={toggleMode}
+        editUser={editUser}
       />
     );
   });
@@ -33,6 +34,16 @@ export function UsersParent2() {
     const newUsersArray = usersArray.map((user) => {
       if (user.id === id) {
         user.isEdit = !user.isEdit;
+      }
+      return user;
+    });
+    setUsersArray(newUsersArray);
+  }
+
+  function editUser(id, field, event) {
+    const newUsersArray = usersArray.map((user) => {
+      if (user.id === id) {
+        user[field] = event.target.value;
       }
       return user;
     });
