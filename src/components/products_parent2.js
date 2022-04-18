@@ -22,9 +22,20 @@ export function ProductsParent2() {
         name={prod.name}
         cost={prod.cost}
         isEdit={prod.isEdit}
+        toggleMode={toggleMode}
       />
     );
   });
+
+  function toggleMode(id) {
+    const newProdsArray = prodsArray.map((prod) => {
+      if (prod.id === id) {
+        !prod.isEdit;
+      }
+      return prod;
+    });
+    setProdsArray(newProdsArray);
+  }
 
   return <div>{prodsArrayResult}</div>;
 }

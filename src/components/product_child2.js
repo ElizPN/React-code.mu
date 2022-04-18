@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 
-export function ProductChild2({ id, name, cost, isEdit }) {
+export function ProductChild2({
+  id,
+  name,
+  cost,
+  isEdit,
+  toggleMode,
+  editProd,
+}) {
   return (
     <div>
       name:{" "}
@@ -15,7 +22,7 @@ export function ProductChild2({ id, name, cost, isEdit }) {
       ) : (
         <span>{cost}</span>
       )}
-      {/* <button onClick={() => toggleMode(id)}>{isEdit ? "Save" : "Edit"}</button> */}
+      <button onClick={() => toggleMode(id)}>{isEdit ? "Save" : "Edit"}</button>
     </div>
   );
 }
