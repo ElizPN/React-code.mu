@@ -19,6 +19,7 @@ export function ProductsParent2() {
     return (
       <ProductChild2
         key={prod.id}
+        id={prod.id}
         name={prod.name}
         cost={prod.cost}
         isEdit={prod.isEdit}
@@ -30,7 +31,7 @@ export function ProductsParent2() {
   function toggleMode(id) {
     const newProdsArray = prodsArray.map((prod) => {
       if (prod.id === id) {
-        !prod.isEdit;
+        prod.isEdit = !prod.isEdit;
       }
       return prod;
     });
