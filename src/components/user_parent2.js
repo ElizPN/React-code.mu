@@ -23,13 +23,21 @@ export function UsersParent2() {
         name={user.name}
         surname={user.surname}
         age={user.age}
+        isEdit={user.isEdit}
+        toggleMode={toggleMode}
       />
     );
   });
 
-  //   function toggleMode (id) {
-  //     const newUsersArray
-  //   }
+  function toggleMode(id) {
+    const newUsersArray = usersArray.map((user) => {
+      if (user.id === id) {
+        user.isEdit = !user.isEdit;
+      }
+      return user;
+    });
+    setUsersArray(newUsersArray);
+  }
 
   return <div>{usersArrayResult}</div>;
 }
