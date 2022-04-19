@@ -87,6 +87,7 @@ import { Products } from "./components/products_parent";
 import { UsersParent } from "./components/users_parent";
 import { ProductsParent2 } from "./components/products_parent2";
 import { UsersParent2 } from "./components/user_parent2";
+import { ProductsParent3 } from "./components/ProductsParent3";
 
 // function App() {
 //   const str1 = "label";
@@ -350,8 +351,10 @@ function App() {
       <UsersParent />
           <hr></hr>
       <ProductsParent2 />
-      <hr></hr>*/}
+      <hr></hr>
       <UsersParent2 />
+    <hr></hr>*/}
+      <ProductsParent3 />
     </div>
   );
 }
