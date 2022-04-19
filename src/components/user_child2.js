@@ -10,6 +10,7 @@ export function UserChild2({
   editUser,
 }) {
   return (
+    // add dependens from value of "isEdit" property (we will have ither input or span)
     <div>
       {isEdit ? (
         <input value={name} onChange={(event) => editUser(id, "name", event)} />

@@ -29,7 +29,7 @@ export function UsersParent2() {
       />
     );
   });
-
+  // toggle mode when we put on the button (in child componenet); set new state for array
   function toggleMode(id) {
     const newUsersArray = usersArray.map((user) => {
       if (user.id === id) {
@@ -40,10 +40,11 @@ export function UsersParent2() {
     setUsersArray(newUsersArray);
   }
 
+  // since we have input - this function change value of input and set new state for array with new value
   function editUser(id, field, event) {
     const newUsersArray = usersArray.map((user) => {
       if (user.id === id) {
-        user[field] = event.target.value;
+        user[field] = event.target.value; // name, surname and age
       }
       return user;
     });
