@@ -13,7 +13,6 @@ export function ProductChild2({
     <div>
       name:
       <ProductFieldGrandchild
-        key={id}
         id={id}
         text={name} //?
         type="name" //?
@@ -22,7 +21,6 @@ export function ProductChild2({
       />
       cost:
       <ProductFieldGrandchild
-        key={id}
         id={id}
         text={cost}
         type="cost"
