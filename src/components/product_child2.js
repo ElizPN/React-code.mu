@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ProductFieldGrandchild } from "./product_field_grandchild";
 
 export function ProductChild2({
   id,
@@ -10,18 +11,24 @@ export function ProductChild2({
 }) {
   return (
     <div>
-      name:{" "}
-      {isEdit ? (
-        <input value={name} onChange={(event) => editProd(id, "name", event)} />
-      ) : (
-        <span>{name}</span>
-      )}
-      cost:{" "}
-      {isEdit ? (
-        <input value={cost} onChange={(event) => editProd(id, "cost", event)} />
-      ) : (
-        <span>{cost}</span>
-      )}
+      name:
+      <ProductFieldGrandchild
+        key={id}
+        id={id}
+        text={name} //?
+        type="name" //?
+        isEdit={isEdit}
+        editProd={editProd}
+      />
+      cost:
+      <ProductFieldGrandchild
+        key={id}
+        id={id}
+        text={cost}
+        type="cost"
+        isEdit={isEdit}
+        editProd={editProd}
+      />
       <button onClick={() => toggleMode(id)}>{isEdit ? "Save" : "Edit"}</button>
     </div>
   );

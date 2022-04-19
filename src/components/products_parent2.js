@@ -40,7 +40,7 @@ export function ProductsParent2() {
   }
 
   function editProd(id, field, event) {
-    // field - this is value of one of our properyies(name or cost)
+    // field - this is value of one of our properties(name or cost)
     const newProdsArray = prodsArray.map((prod) => {
       if (prod.id === id) {
         prod[field] = event.target.value; // here we edit value of property (name or cost)
