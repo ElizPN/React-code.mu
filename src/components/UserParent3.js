@@ -23,15 +23,15 @@ export function UserParent3() {
         name={user.name}
         surname={user.surname}
         age={user.age}
-        toggleMode={toggleMode}
+        changeField={changeField}
       />
     );
   });
-  function toggleMode(id, field, event) {
+  function changeField(id, field, event) {
     const newUsersArray = usersArray.map((user) => {
       if (user.id === id) {
-        console.log("user id", user.id);
-        console.log("id", id);
+        console.log(user[field]);
+
         user[field] = event.target.value;
       }
       return user;
