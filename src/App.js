@@ -88,6 +88,8 @@ import { UsersParent } from "./components/users_parent";
 import { ProductsParent2 } from "./components/products_parent2";
 import { UsersParent2 } from "./components/user_parent2";
 import { ProductsParent3 } from "./components/ProductsParent3";
+import { UserChild3 } from "./components/UserChild3";
+import { UserParent3 } from "./components/UserParent3";
 
 // function App() {
 //   const str1 = "label";
@@ -353,8 +355,10 @@ function App() {
       <ProductsParent2 />
       <hr></hr>
       <UsersParent2 />
-    <hr></hr>*/}
+    <hr></hr>
       <ProductsParent3 />
+    <hr></hr>*/}
+      <UserParent3 />
     </div>
   );
 }
