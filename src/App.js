@@ -92,6 +92,7 @@ import { UserChild3 } from "./components/UserChild3";
 import { UserParent3 } from "./components/UserParent3";
 import { Calculator } from "./Calculator";
 import { MetricConversion } from "./components/MetricConversion";
+import { CurrencyConvert } from "./components/CurrencyConvert";
 
 // function App() {
 //   const str1 = "label";
@@ -363,8 +364,10 @@ function App() {
       <UserParent3 />
     <hr></hr>
       <Calculator />
-    <hr></hr>*/}
+    <hr></hr>
       <MetricConversion />
+    <hr></hr>*/}
+      <CurrencyConvert />
     </div>
   );
 }
