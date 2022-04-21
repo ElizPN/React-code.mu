@@ -10,9 +10,18 @@ export function CurrencyConvert() {
     setEuro(event.target.value);
   }
 
+  function euroToKrona(currency) {
+    return currency * 10.25;
+  }
+
   return (
     <div>
-      <CurrencyInput euro={euro} enterEuroCurrency={enterEuroCurrency} />
+      <CurrencyInput
+        euro={euro}
+        enterEuroCurrency={enterEuroCurrency}
+        euroToKrona={euroToKrona}
+        setKrona={setKrona}
+      />
       <CurrencyResult krona={krona} />
     </div>
   );
