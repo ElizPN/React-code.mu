@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import { TempInput3 } from "./TempInput3";
 
-export function MetricConversionOneState() {
+export function MetricConversionTwoStates() {
   const [farTemp, setFarTemp] = useState(0);
   const [celsTemp, setCelsTemp] = useState(0);
 
   function farToCelsius(num) {
     let result = (num - 32) * (5 / 9);
-    console.log(result);
-    console.log(num);
-
     return result;
   }
 
   function celsiusToFar(num) {
-    let result = (num * 9) / 5 + 32;
+    let result = num * (9 / 5) + 32;
+
     return result;
   }
 
@@ -25,7 +23,7 @@ export function MetricConversionOneState() {
 
   function editCelTemp(event) {
     setCelsTemp(event.target.value);
-    setFarTemp(farToCelsius(event.target.value));
+    setFarTemp(celsiusToFar(event.target.value));
   }
 
   return (

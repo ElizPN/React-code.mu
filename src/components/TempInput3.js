@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
-export function TempInput3({
-  farTemp,
-  celsTemp,
-  farToCelsius,
-  celsiusToFar,
-  editFarTemp,
-  editCelTemp,
-}) {
+export function TempInput3({ farTemp, celsTemp, editFarTemp, editCelTemp }) {
   return (
     <div>
       <span>farenhate</span>
