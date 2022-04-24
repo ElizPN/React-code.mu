@@ -93,7 +93,8 @@ import { UserParent3 } from "./components/UserParent3";
 import { Calculator } from "./Calculator";
 import { MetricConversion } from "./components/MetricConversion";
 import { CurrencyConvert } from "./components/CurrencyConvert";
-import { MetricConversionTwoStates } from "./components/MetricConversionOneState";
+import { MetricConversionTwoStates } from "./components/MetricConversionTwoStates";
+import { MetricConversionOneState } from "./components/MetricConversionOneState";
 
 // function App() {
 //   const str1 = "label";
@@ -369,8 +370,10 @@ function App() {
       <MetricConversion />
     <hr></hr>
       <CurrencyConvert />
-    <hr></hr>*/}
+    <hr></hr>
       <MetricConversionTwoStates />
+    <hr></hr>*/}
+      <MetricConversionOneState />
     </div>
   );
 }
