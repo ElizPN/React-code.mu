@@ -96,6 +96,7 @@ import { CurrencyConvert } from "./components/CurrencyConvert";
 import { MetricConversionTwoStates } from "./components/MetricConversionTwoStates";
 import { MetricConversionOneState } from "./components/MetricConversionOneState";
 import { CalculatorSum } from "./components/CalculatorSum";
+import { EditArray2 } from "./components/EditArray2";
 
 // function App() {
 //   const str1 = "label";
@@ -375,8 +376,10 @@ function App() {
       <MetricConversionTwoStates />
     <hr></hr>
       <MetricConversionOneState />
-      <hr></hr> */}
+      <hr></hr> 
       <CalculatorSum />
+    <hr></hr> */}
+      <EditArray2 />
     </div>
   );
 }
