@@ -97,6 +97,7 @@ import { MetricConversionTwoStates } from "./components/MetricConversionTwoState
 import { MetricConversionOneState } from "./components/MetricConversionOneState";
 import { CalculatorSum } from "./components/CalculatorSum";
 import { EditArray2 } from "./components/EditArray2";
+import { ShoppingCart } from "./components/PropTypesExemple";
 
 // function App() {
 //   const str1 = "label";
@@ -378,8 +379,10 @@ function App() {
       <MetricConversionOneState />
       <hr></hr> 
       <CalculatorSum />
-    <hr></hr> */}
+    <hr></hr> 
       <EditArray2 />
+    <hr></hr> */}
+      <ShoppingCart />
     </div>
   );
 }
