@@ -24,8 +24,7 @@ export function EditArray2() {
     newNotesArray[editIndex] = event.target.value;
     setNotesArray(newNotesArray);
   }
-  const currentEditValue =
-    editIndex === 0 || editIndex ? notesArray[editIndex] : ""; // to avoid initial undefined value
+  const currentEditValue = editIndex === null ? "" : notesArray[editIndex]; // to avoid initial undefined value
 
   return (
     <div>
