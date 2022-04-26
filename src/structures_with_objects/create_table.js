@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import { nanoid } from "nanoid";
 
 export function Table() {
@@ -6,7 +7,7 @@ export function Table() {
     { id: nanoid(), name: "user2", surn: "surn2", age: 31 },
     { id: nanoid(), name: "user3", surn: "surn3", age: 32 },
   ];
-  const row = users.map(function (elem) {
+  const row = users.map(function(elem) {
     return (
       <tr key={elem.id}>
         <td>{elem.id}</td>

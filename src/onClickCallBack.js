@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 export function OnClickCallBack() {
   function showNumber(num) {
     alert(num);

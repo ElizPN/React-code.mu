@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import { nanoid } from "nanoid";
 
 function id() {
@@ -10,7 +11,7 @@ export function SomeFun() {
     { id: id(), name: "product2", cost: 200 },
     { id: id(), name: "product3", cost: 300 },
   ];
-  const newProds = prods.map(function (elem) {
+  const newProds = prods.map(function(elem) {
     return (
       <li key={elem.id}>
         {" "}

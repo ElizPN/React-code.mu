@@ -1,3 +1,5 @@
+import React, { Component } from "react";
+
 export function ShowAfterClick() {
   function show1() {
     alert(1);
