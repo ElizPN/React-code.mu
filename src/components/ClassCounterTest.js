@@ -4,15 +4,12 @@ class Counter extends React.Component {
     this.state = {
       count: 0,
     };
-    // Change code below this line
+    //bining handels with "this"
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
     this.reset = this.reset.bind(this);
-
-    // Change code above this line
   }
-  // Change code below this line
-
+  // set new state through handlers
   increment() {
     this.setState((state) => ({
       count: state.count + 1,
@@ -31,9 +28,9 @@ class Counter extends React.Component {
     });
   }
 
-  // Change code above this line
   render() {
     return (
+      //call handlers in onClick
       <div>
         <button className="inc" onClick={this.increment}>
           Increment!
