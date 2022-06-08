@@ -35,7 +35,7 @@ import { ArrayCities } from "./arrays/array_cities";
 import { YourAge } from "./your_age";
 import { Radio } from "./radio";
 import { RadioChooseLanguage } from "./radio_choose_lang";
-import { IncreaseArray } from "./arrays/increase_array";
+import { IncreaseArray } from "./arrays/IncreaseArray";
 import { DefaultInput } from "./default_value_input";
 import { DefaultCkeckBox } from "./default_check_box";
 import { ReduceArray } from "./arrays/reduce_array";
